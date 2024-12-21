@@ -1,108 +1,214 @@
 /* Fuentes */
 body {
-    font-family: 'Rock Salt', cursive;
+    font-family: 'Anton', sans-serif;
     background-color: #1c1c1c;
     color: #fff;
     margin: 0;
     padding: 0;
-  }
-  
-  /* Header */
-  .header {
+}
+
+/* Header */
+.header {
     background-color: #222;
-    padding: 10px 0;
+    padding: 15px 0;
     text-align: center;
-  }
-  .header .logo {
-    font-size: 3em;
-    font-family: 'Bangers', cursive;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    background-image: url('/images/Fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header .logo {
+    font-size: 4em;
+    font-family: 'Anton', sans-serif;
     color: #f53b57;
-  }
-  .header .nav ul {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header .nav ul {
     list-style: none;
     padding: 0;
-  }
-  .header .nav ul li {
-    display: inline;
+    margin: 10px 0;
+}
+
+.header .nav ul li {
+    display: inline-block;
     margin: 0 20px;
-  }
-  .header .nav ul li a {
+}
+
+.header .nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2em;
-  }
-  
-  /* Hero Section */
-  .hero {
-    background: url('tatuaje-hero.jpg') no-repeat center center/cover;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto de agrandamiento y cambio de color al pasar el mouse sobre los enlaces */
+.header .nav ul li a:hover {
+    transform: scale(1.2);
+    color: #f53b57;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('/images/Fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
     text-align: center;
-    padding: 50px;
+    padding: 100px 20px;
     color: #fff;
-  }
-  .hero h1 {
-    font-size: 4em;
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 5em;
     margin-bottom: 20px;
-    font-family: 'Bangers', cursive;
-  }
-  .hero p {
-    font-size: 1.5em;
-  }
-  .hero .btn {
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #f53b57;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
     background-color: #f53b57;
-    padding: 10px 30px;
+    padding: 15px 40px;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-  }
-  
-  /* Servicios */
-  .section {
-    padding: 50px 0;
+    border-radius: 10px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efecto de agrandamiento y cambio de color en el botón */
+.hero .btn:hover {
+    transform: scale(1.1);
+    background-color: #d44352;
+}
+
+/* Servicios */
+.section {
+    padding: 60px 0;
     text-align: center;
-  }
-  .card-container {
+    background-color: #333;
+    background-image: url('/images/Fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card-container {
     display: flex;
     justify-content: space-around;
-  }
-  .card {
-    background-color: #333;
-    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card, .pricing-card {
+    background-color: #444;
+    background-image: url('/images/fondlu.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
     width: 30%;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  }
-  .card h3 {
+    border-radius: 500px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-attachment: fixed; /* Añadir para que el fondo se quede fijo */
+}
+
+
+
+/* Efecto de agrandamiento y sombra al pasar el mouse sobre las tarjetas */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.card h3 {
     color: #f53b57;
-    font-family: 'Bangers', cursive;
-  }
-  
-  /* Precios */
-  .pricing-container {
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 2.5em; /* Aumento de tamaño para los títulos de las tarjetas */
+}
+
+/* Cambiar la fuente de los títulos de productos y paquetes a una fuente más "friki" */
+.card h3 {
+    font-family: 'Courier New', Courier, monospace; /* Fuente friki */
+}
+
+/* Información de la tarjeta */
+.card p {
+    font-size: 1.6em; /* Aumentar el tamaño de la información */
+}
+
+/* Precios */
+.pricing-container {
     display: flex;
     justify-content: space-around;
-  }
-  .pricing-card {
-    background-color: #333;
-    padding: 20px;
-    width: 30%;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  }
-  .pricing-card h3 {
+    margin-top: 40px;
+}
+
+
+
+/* Efecto de agrandamiento y sombra al pasar el mouse sobre las tarjetas de precios */
+.pricing-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.pricing-card h3 {
     color: #f53b57;
-    font-family: 'Bangers', cursive;
-  }
-  
-  /* Footer */
-  .footer {
+    font-family: 'Courier New', Courier, monospace; /* Fuente friki */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.5em; /* Aumento de tamaño para los títulos de los precios */
+}
+
+/* Información de la tarjeta de precios */
+.pricing-card p {
+    font-size: 1.6em; /* Aumentar el tamaño de la información */
+}
+
+/* Footer */
+.footer {
     background-color: #222;
     color: #fff;
     text-align: center;
-    padding: 30px 0;
-  }
-  .footer .message {
-    font-size: 1.2em;
+    padding: 40px 20px;
+    position: relative;
+    background-image: url('/images/Fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.footer .message {
+    font-size: 1.5em;
     color: #f53b57;
-  }
-  
+    font-weight: bold;
+    letter-spacing: 1px;
+}
