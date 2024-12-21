@@ -1,6 +1,6 @@
 /* Fuentes */
 body {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Bangers', sans-serif;  /* Fuente tipo graffiti */
     background-color: #1c1c1c;
     color: #fff;
     margin: 0;
@@ -13,7 +13,7 @@ body {
     padding: 15px 0;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    background-image: url('/images/Fondo.jpg');
+    background-image: url('images/Fondo.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -21,12 +21,13 @@ body {
 }
 
 .header .logo {
-    font-size: 4em;
-    font-family: 'Anton', sans-serif;
+    font-size: 5em;
+    font-family: 'Bangers', sans-serif;  /* Fuente con estilo graffiti y más atrevida */
     color: #f53b57;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     font-weight: bold;
+    text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);  /* Más sombra para resaltar */
 }
 
 /* Menu de navegación */
@@ -44,21 +45,21 @@ body {
 .header .nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.4em;
-    letter-spacing: 1px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
     font-weight: bold;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 /* Efecto de agrandamiento al pasar el mouse */
 .header .nav ul li a:hover {
-    transform: scale(1.2);
+    transform: scale(1.3);  /* Mayor aumento de tamaño */
     color: #f53b57;
 }
 
 /* Hero Section */
 .hero {
-    background-image: url('/images/Fondo.jpg');
+    background-image: url('images/Fondo.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -71,24 +72,259 @@ body {
 }
 
 .hero h1 {
-    font-size: 5em;
+    font-size: 6em;  /* Aumento de tamaño */
     margin-bottom: 20px;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Bangers', sans-serif;  /* Estilo graffiti */
     font-weight: bold;
-    letter-spacing: 5px;
+    letter-spacing: 8px;
     color: #f53b57;
     text-transform: uppercase;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8); /* Más sombra */
 }
 
 .hero p {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 30px;
 }
 
 .hero .btn {
     background-color: #f53b57;
-    padding: 15px 40px;
+    padding: 20px 50px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.8em;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    transform: scale(1.2);
+    background-color: #d44352;
+}
+
+/* Sección de Servicios */
+.section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #333;
+    background-image: url('images/Fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Títulos y subtítulos más grandes en la sección de Servicios */
+#servicios h2 {
+    font-size: 4em; /* Título de servicios más grande */
+    font-family: 'Bangers', sans-serif;  /* Fuente graffiti */
+    color: #f53b57;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+#servicios .card h3 {
+    font-size: 2.5em; /* Títulos dentro de las tarjetas más grandes */
+    font-family: 'Bangers', sans-serif;  /* Fuente graffiti */
+}
+
+#servicios .card p {
+    font-size: 1.6em; /* Subtítulos dentro de las tarjetas */
+}
+
+/* Ajustar el tamaño y disposición de las tarjetas en dispositivos móviles */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Efecto de agrandamiento en las imágenes dentro de las tarjetas de servicios */
+.service-img, .pricing-card img {
+    transition: transform 0.3s ease; /* Suaviza el efecto */
+}
+
+.service-img:hover, .pricing-card img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de las imágenes */
+}
+/* Sección de Precios */
+#precios {
+    background-color: #333;
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
+    background-image: url('images/Fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-top: 5px solid #f53b57;
+}
+
+#precios h2 {
+    font-size: 3.5em;
+    font-family: 'Anton', sans-serif;
+    color: #f53b57;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+    letter-spacing: 4px;
+}
+
+/* Contenedor de las tarjetas de precios */
+.pricing-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+/* Estilo para cada tarjeta de precios */
+.pricing-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-image: url('images/Fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    border: 2px solid #f53b57;
+    position: relative;
+}
+
+.pricing-card h3 {
+    font-size: 2.5em;
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.pricing-card p {
+    font-size: 1.8em;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-card ul li {
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Estilos para los colores de fondo de las tarjetas */
+.pricing-card:nth-child(1) {
+    background-color: rgba(255, 87, 34, 0.7); /* Naranja */
+}
+
+.pricing-card:nth-child(2) {
+    background-color: rgba(33, 150, 243, 0.7); /* Azul */
+}
+
+.pricing-card:nth-child(3) {
+    background-color: rgba(76, 175, 80, 0.7); /* Verde */
+}
+
+/* Efectos de transición */
+.pricing-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 768px) {
+    #precios h2 {
+        font-size: 3em;
+    }
+
+    .pricing-card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+/* Estilo para pantallas más pequeñas */
+@media screen and (max-width: 480px) {
+    #precios h2 {
+        font-size: 2.5em;
+    }
+
+    .pricing-card {
+        padding: 20px;
+    }
+
+    .pricing-card h3 {
+        font-size: 2em;
+    }
+
+    .pricing-card p {
+        font-size: 1.5em;
+    }
+}
+/* Sección de Contacto */
+#contacto {
+    padding: 60px 20px;
+    background-color: #444;
+    background-image: url('images/Fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    font-family: 'Bangers', sans-serif;
+    font-weight: bold;
+    letter-spacing: 8px;
+    color: #f53b57;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.contact-info {
+    margin-top: 30px;
+    color: #fff;
+}
+
+.contact-info p {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.contact-info p strong {
+    color: #f53b57;
+}
+
+.whatsapp-btn {
+    background-color: #25d366;  /* Color verde de WhatsApp */
+    padding: 15px 30px;
     color: #fff;
     text-decoration: none;
     border-radius: 10px;
@@ -99,33 +335,15 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.hero .btn:hover {
+.whatsapp-btn:hover {
     transform: scale(1.1);
-    background-color: #d44352;
+    background-color: #128c7e;  /* Color verde más oscuro al pasar el mouse */
 }
 
-/* Sección de Servicios */
-.section {
-    padding: 60px 0;
-    text-align: center;
-    background-color: #333;
-    background-image: url('/images/Fondo.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-}
 
-/* Ajustar el tamaño y disposición de las tarjetas en dispositivos móviles */
-.card-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.card, .pricing-card {
+.card {
     background-color: #444;
-    background-image: url('/images/fondlu.jpg');
+    background-image: url('images/fondlu.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -140,20 +358,20 @@ body {
 /* Ajuste en pantallas pequeñas */
 @media screen and (max-width: 768px) {
     .header .logo {
-        font-size: 3em;
+        font-size: 4em;
     }
 
     .hero h1 {
-        font-size: 3em;
+        font-size: 4em;
     }
 
     .hero p {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     .hero .btn {
-        padding: 12px 30px;
-        font-size: 1.2em;
+        padding: 15px 35px;
+        font-size: 1.5em;
     }
 
     .card, .pricing-card {
@@ -162,11 +380,11 @@ body {
     }
 
     .card h3, .pricing-card h3 {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     .card p, .pricing-card p {
-        font-size: 1.4em;
+        font-size: 1.6em;
     }
 
     .card-container {
@@ -182,24 +400,24 @@ body {
     }
 
     .hero h1 {
-        font-size: 2.5em;
+        font-size: 3em;
     }
 
     .hero p {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
     .hero .btn {
-        padding: 10px 25px;
-        font-size: 1em;
+        padding: 10px 30px;
+        font-size: 1.2em;
     }
 
     .card h3, .pricing-card h3 {
-        font-size: 1.8em;
+        font-size: 2em;
     }
 
     .card p, .pricing-card p {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
 }
 
@@ -210,7 +428,7 @@ body {
     text-align: center;
     padding: 40px 20px;
     position: relative;
-    background-image: url('../images/Fondo.jpg');
+    background-image: url('images/Fondo.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -218,8 +436,9 @@ body {
 }
 
 .footer .message {
-    font-size: 1.5em;
+    font-size: 2em;
     color: #f53b57;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
