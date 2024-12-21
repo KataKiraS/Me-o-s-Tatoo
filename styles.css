@@ -29,6 +29,7 @@ body {
     font-weight: bold;
 }
 
+/* Menu de navegación */
 .header .nav ul {
     list-style: none;
     padding: 0;
@@ -49,7 +50,7 @@ body {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Efecto de agrandamiento y cambio de color al pasar el mouse sobre los enlaces */
+/* Efecto de agrandamiento al pasar el mouse */
 .header .nav ul li a:hover {
     transform: scale(1.2);
     color: #f53b57;
@@ -98,13 +99,12 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* Efecto de agrandamiento y cambio de color en el botón */
 .hero .btn:hover {
     transform: scale(1.1);
     background-color: #d44352;
 }
 
-/* Servicios */
+/* Sección de Servicios */
 .section {
     padding: 60px 0;
     text-align: center;
@@ -116,6 +116,7 @@ body {
     background-attachment: fixed;
 }
 
+/* Ajustar el tamaño y disposición de las tarjetas en dispositivos móviles */
 .card-container {
     display: flex;
     justify-content: space-around;
@@ -130,66 +131,76 @@ body {
     background-size: cover;
     padding: 30px;
     width: 30%;
-    border-radius: 500px;
+    border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-attachment: fixed; /* Añadir para que el fondo se quede fijo */
+    background-attachment: fixed;
 }
 
+/* Ajuste en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .header .logo {
+        font-size: 3em;
+    }
 
+    .hero h1 {
+        font-size: 3em;
+    }
 
-/* Efecto de agrandamiento y sombra al pasar el mouse sobre las tarjetas */
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    .hero p {
+        font-size: 1.5em;
+    }
+
+    .hero .btn {
+        padding: 12px 30px;
+        font-size: 1.2em;
+    }
+
+    .card, .pricing-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card h3, .pricing-card h3 {
+        font-size: 2em;
+    }
+
+    .card p, .pricing-card p {
+        font-size: 1.4em;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-.card h3 {
-    color: #f53b57;
-    font-family: 'Anton', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 2.5em; /* Aumento de tamaño para los títulos de las tarjetas */
-}
+/* Ajuste para dispositivos móviles pequeños */
+@media screen and (max-width: 480px) {
+    .hero {
+        padding: 50px 10px;
+    }
 
-/* Cambiar la fuente de los títulos de productos y paquetes a una fuente más "friki" */
-.card h3 {
-    font-family: 'Courier New', Courier, monospace; /* Fuente friki */
-}
+    .hero h1 {
+        font-size: 2.5em;
+    }
 
-/* Información de la tarjeta */
-.card p {
-    font-size: 1.6em; /* Aumentar el tamaño de la información */
-}
+    .hero p {
+        font-size: 1.2em;
+    }
 
-/* Precios */
-.pricing-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
-}
+    .hero .btn {
+        padding: 10px 25px;
+        font-size: 1em;
+    }
 
+    .card h3, .pricing-card h3 {
+        font-size: 1.8em;
+    }
 
-
-/* Efecto de agrandamiento y sombra al pasar el mouse sobre las tarjetas de precios */
-.pricing-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
-}
-
-.pricing-card h3 {
-    color: #f53b57;
-    font-family: 'Courier New', Courier, monospace; /* Fuente friki */
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 2.5em; /* Aumento de tamaño para los títulos de los precios */
-}
-
-/* Información de la tarjeta de precios */
-.pricing-card p {
-    font-size: 1.6em; /* Aumentar el tamaño de la información */
+    .card p, .pricing-card p {
+        font-size: 1.2em;
+    }
 }
 
 /* Footer */
