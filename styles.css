@@ -1,0 +1,108 @@
+/* Fuentes */
+body {
+    font-family: 'Rock Salt', cursive;
+    background-color: #1c1c1c;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #222;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .header .logo {
+    font-size: 3em;
+    font-family: 'Bangers', cursive;
+    color: #f53b57;
+  }
+  .header .nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  .header .nav ul li {
+    display: inline;
+    margin: 0 20px;
+  }
+  .header .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('tatuaje-hero.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 50px;
+    color: #fff;
+  }
+  .hero h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    font-family: 'Bangers', cursive;
+  }
+  .hero p {
+    font-size: 1.5em;
+  }
+  .hero .btn {
+    background-color: #f53b57;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+  }
+  
+  /* Servicios */
+  .section {
+    padding: 50px 0;
+    text-align: center;
+  }
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .card {
+    background-color: #333;
+    padding: 20px;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  .card h3 {
+    color: #f53b57;
+    font-family: 'Bangers', cursive;
+  }
+  
+  /* Precios */
+  .pricing-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .pricing-card {
+    background-color: #333;
+    padding: 20px;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  .pricing-card h3 {
+    color: #f53b57;
+    font-family: 'Bangers', cursive;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+  }
+  .footer .message {
+    font-size: 1.2em;
+    color: #f53b57;
+  }
+  
