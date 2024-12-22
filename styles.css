@@ -203,7 +203,7 @@ body {
 .pricing-card h3 {
     font-size: 2.5em;
     font-family: 'Anton', sans-serif;
-    color: #fff;
+    color: #000000;
     text-transform: uppercase;
     margin-bottom: 20px;
     letter-spacing: 3px;
@@ -212,7 +212,7 @@ body {
 
 .pricing-card p {
     font-size: 1.8em;
-    color: #fff;
+    color: #922c64;
     font-weight: bold;
     margin-bottom: 30px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
@@ -226,7 +226,7 @@ body {
 
 .pricing-card ul li {
     font-size: 1.2em;
-    color: #fff;
+    color: #000000;
     margin-bottom: 10px;
     font-weight: bold;
     letter-spacing: 1px;
